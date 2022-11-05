@@ -1,3 +1,10 @@
 name: HardTasks
 main: me.grenadinio.hardtasks.HardTasksPlugin
 version: 1.0
+commands:
+  setpos:
+    usage: /<command>
+    permission: hardtasks.setpos
+  spawnsheep:
+    usage: /<command>
+    permission: hardtasks.spawnsheep
