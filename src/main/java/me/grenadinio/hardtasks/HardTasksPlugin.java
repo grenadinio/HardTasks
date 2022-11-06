@@ -14,6 +14,8 @@ public class HardTasksPlugin extends JavaPlugin {
     public void onEnable() {
         this.getCommand("setpos").setExecutor(new CommandSetPos(location));
         this.getCommand("spawnsheep").setExecutor(new CommandSpawnSheep(location));
+        EventListener eventListener = new EventListener();
+        getServer().getPluginManager().registerEvents(eventListener, this);
     }
 
     @Override
